@@ -9,6 +9,8 @@ using PermisosApp.Repository.Abstract;
 using PermisosApp.Repository.Implementations;
 using PermisosApp.Services.Abstract;
 using PermisosApp.Services.Implementations;
+using PermisosApp.Web.Configuration;
+using System;
 
 namespace PermisosApp.Web
 {
@@ -22,12 +24,14 @@ namespace PermisosApp.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IPermissionTypeService, PermissionTypeService>();
+            services.AddTransient<IPermissionService, PermissionService>();
             services.AddTransient<IPermissionTypeRepository, PermissionTypeRepository>();
+            services.AddTransient<IPermissionRepository, PermissionRepository>();
             services.AddControllers();
             string dbConnString = Configuration["Data:PermisosApp:ConnectionString"];
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(dbConnString, builder => builder.MigrationsAssembly(typeof(Startup).Assembly.FullName)));
         }
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())
             {
@@ -44,6 +48,8 @@ namespace PermisosApp.Web
             {
                 endpoints.MapControllers();
             });
+
+            DbInitializer.Seed(serviceProvider.GetRequiredService<ApplicationDbContext>());
         }
     }
 }
