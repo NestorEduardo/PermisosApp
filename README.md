@@ -1,4 +1,4 @@
-# Permisos App
+# PermisosApp
 
 ## Tecnologías usadas
 - **Backend:** C#, ASP.NET MVC Core 3.1
