@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PermisosApp.Services", "Per
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PermisosApp.Web", "PermisosApp.Web\PermisosApp.Web.csproj", "{0676FD0F-F995-47BC-AA89-2D5A68FEBB18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PermisosApp.Data", "PermisosApp.Data\PermisosApp.Data.csproj", "{DA24CB49-7C04-474F-ACB5-F35DA2871A77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0676FD0F-F995-47BC-AA89-2D5A68FEBB18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0676FD0F-F995-47BC-AA89-2D5A68FEBB18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0676FD0F-F995-47BC-AA89-2D5A68FEBB18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA24CB49-7C04-474F-ACB5-F35DA2871A77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA24CB49-7C04-474F-ACB5-F35DA2871A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA24CB49-7C04-474F-ACB5-F35DA2871A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA24CB49-7C04-474F-ACB5-F35DA2871A77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
