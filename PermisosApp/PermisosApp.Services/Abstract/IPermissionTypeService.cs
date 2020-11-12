@@ -3,5 +3,5 @@ using PermisosApp.Repository.Abstract;
 
 namespace PermisosApp.Services.Abstract
 {
-    public interface ICategoryService : IBaseService<PermissionType, IPermissionTypeRepository> { }
+    public interface IPermissionTypeService : IBaseService<PermissionType, IPermissionTypeRepository> { }
 }
