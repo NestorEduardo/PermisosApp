@@ -2,7 +2,7 @@
 
 ## Tecnologías usadas
 - **Backend:** C#, ASP.NET MVC Core 3.1
-- **Frontend:** Vue
+- **Frontend:** Vue js
 
 ### Pasos para correr
 - Abrir la terminal y escribir **git clone https://github.com/NestorEduardo/PermisosApp.git**
