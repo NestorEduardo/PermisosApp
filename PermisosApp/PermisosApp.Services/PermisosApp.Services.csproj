@@ -1,7 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PermisosApp.Domain\PermisosApp.Domain.csproj" />
+    <ProjectReference Include="..\PermisosApp.Repository\PermisosApp.Repository.csproj" />
+  </ItemGroup>
 
 </Project>
