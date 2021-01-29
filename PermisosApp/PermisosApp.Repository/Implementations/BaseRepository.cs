@@ -49,6 +49,7 @@ namespace PermisosApp.Repository.Implementations
 
             return query;
         }
+        
         public IQueryable<T> Get(params Expression<Func<T, object>>[] include)
         {
             IQueryable<T> query = Database.Set<T>().AsQueryable();
